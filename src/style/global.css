@@ -1,0 +1,161 @@
+:root {
+	/*=============================================
+  =          Colores transparentes              =
+  =============================================*/
+	--bs-negro-rgba: rgba(33, 37, 41, 0.856);
+	--bs-gris-rgba: rgba(108, 117, 125, 0.806);
+	/*=====  End   ======*/
+
+	/*=============================================
+=            Colores            =
+=============================================*/
+	--bs-blanco-claro: #f8f9fa;
+	--bs-gris: #6c757d;
+	--bs-blanco: #fff;
+	--bs-azul-oscuro: #0e1e2f;
+	--bs-negro-oscuro: #212529;
+	--bs-verde-claro: #b4bd00;
+	--bs-verde-oscuro: #377130;
+	--bs-marron: #4e3629;
+	--bs-azul: #009cff;
+	--bs-rojo: #e34949;
+	--bs-verde-ico: #1ed12d;
+	--bs-verde-mer: #00ab61;
+	--bs-naranja: #ffa330;
+	/*=====  End of   ======*/
+
+	/*=============================================
+  =            Fuentes            =
+  =============================================*/
+	--body-font: "fontFamily.sans", ui-sans-serif, system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
+	--normal-font-size: 1rem;
+	--font-500: 500;
+	--font-600: 600;
+	--font-700: 700;
+	/*===== End ======*/
+
+	/*=============================================
+  =            Margin - Padding arriba abajo derecha e izquierda             =
+  =============================================*/
+	--mb-100: 6.25rem;
+	--mb-50: 3.125rem;
+	--mb-20: 1.25rem;
+	--mb-10: 0.625rem;
+	--mb-0-5: 0.5rem;
+	/*===== End ======*/
+
+	/*=============================================
+  =             z-index            =
+  =============================================*/
+	--z-fijo: 10;
+	--z-modal: 100;
+
+	/*===== End ======*/
+
+	/*=============================================
+  =            Border-Radius:  bordes redondeados            =
+  =============================================*/
+
+	--br-5: 0.3125rem;
+
+	/*===== End ======*/
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-weight: var(--font-600);
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--bs-blanco-claro);
+}
+
+body {
+		
+		-webkit-text-size-adjust: 100%;
+		background: linear-gradient(to  right , var(--bs-azul-oscuro) , var(--bs-negro-oscuro));
+
+	}
+
+main {
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	margin-left: var(--mb-10);
+	margin-right: var(--mb-10);
+}
+input,
+select,
+button,
+textarea {
+	background-color: inherit;
+	outline: none;
+	border: none;
+	overflow: hidden;
+}
+textarea {
+	resize: vertical;
+}
+button,
+[role="button"] {
+	cursor: pointer;
+	border: none;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.5;
+	font-weight: var(--font-700);
+}
+
+h1 {
+	font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+
+h3 {
+	font-size: calc(1.3rem + 0.6vw);
+}
+ul {
+	list-style: none;
+}
+
+@media (max-width: 1200px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+p {
+	line-height: 1.5;
+}
+
+legend {
+	float: left;
+	width: 100%;
+	margin-top: var(--mb-10);
+	margin-bottom: var(--mb-10);
+	font-size: calc(1.275rem + 0.3vw);
+	font-weight: var(--font-700);
+}

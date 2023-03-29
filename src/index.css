@@ -1,0 +1,102 @@
+header {
+	margin-top: var(--mb-50);
+	margin-bottom: var(--mb-50);
+}
+header h1 {
+	text-align: center;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+main .contenedor {
+	margin: auto;
+	width: 90%;
+	max-width: 800px;
+}
+
+main .contenedor .caja_padre {
+	background-color: var(--bs-rojo);
+	padding: var(--mb-20);
+	background-color: var(--bs-negro-oscuro);
+	box-shadow: 0px 0px 20px var(--bs-gris);
+	border-radius: var(--br-5);
+}
+
+main .contenedor .caja_padre form .formulario_grupo,
+main .contenedor .caja_padre form input[type="submit"] {
+	margin-top: var(--mb-10);
+	margin-bottom: var(--mb-10);
+}
+
+main .contenedor .caja_padre form .formulario_grupo label {
+	text-transform: capitalize;
+}
+
+main .contenedor .caja_padre form .formulario_grupo select {
+	background-color: var(--bs-verde-mer);
+}
+
+main .contenedor .caja_padre form .formulario_grupo select,
+main .contenedor .caja_padre form input[type="submit"] {
+	width: 100%;
+	cursor: pointer;
+}
+
+main .contenedor .caja_padre form .formulario_grupo select,
+main .contenedor .caja_padre form input[type="submit"] {
+	padding: var(--mb-10);
+	border-radius: var(--br-5);
+}
+main .contenedor .caja_padre form input[type="radio"] {
+	margin-left: var(--mb-10);
+	margin-right: var(--mb-10);
+	accent-color: var(--bs-verde-mer);
+	cursor: pointer;
+}
+
+main .contenedor .caja_padre form input[type="submit"] {
+	background-color: var(--bs-azul);
+	transition-property: background-color;
+	transition-timing-function: ease-out;
+	transition-duration: 0.7s;
+	text-transform: uppercase;
+	font-weight: var(--font-700);
+}
+main .contenedor .caja_padre form input[type="submit"]:hover {
+	background-color: var(--bs-rojo);
+}
+
+main .caja_error {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: var(--bs-rojo);
+	padding: var(--mb-10);
+	margin-right: var(--mb-20);
+	margin-top: var(--mb-20);
+	border-radius: var(--br-5);
+}
+main .caja_error p {
+	color: var(--bs-blanco-claro);
+	text-align: center;
+}
+
+main .contenedor .caja_padre .caja_resulatado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: var(--mb-10);
+}
+
+main .contenedor .caja_padre .caja_resulatado h2 {
+	color: var(--bs-azul);
+	font-weight: 800;
+	text-transform: capitalize;
+}
+main .contenedor .caja_padre .caja_resulatado p {
+	color: var(--bs-azul);
+	font-size: 1.2em;
+}
+main .contenedor .caja_padre .caja_resulatado p::first-letter {
+	text-transform: capitalize;
+}
